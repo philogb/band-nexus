@@ -1,1 +1,0 @@
-{"John Lennon":{"Sean Lennon":["Julian Lennon","Bijou Phillips","Yoko Ono"],"John Lennon and Paul McCartney":["Paul McCartney"],"John Lennon & The Plastic Ono Band":["The Plastic Ono Band"],"John Lennon & Yoko Ono":["Yoko Ono"],"The Quarrymen":["Paul McCartney","George Harrison"],"The Beatles":["Paul McCartney","George Harrison","Ringo Starr","Pete Best","Stuart Sutcliffe"]}}

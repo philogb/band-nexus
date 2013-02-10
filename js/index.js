@@ -79,7 +79,7 @@ function loadTree(ht, bandName, callback) {
   Log.write('Loading data...');
 
   new Request.JSON({
-    url: 'data/bands/_' + bandName + '.txt',
+    url: 'data/bands/' + bandName + '.txt',
     onSuccess: function(json) {
       json = buildTreeJSON(json);
       callback(ht, json);

@@ -1,1 +1,0 @@
-{"Chris Cornell":{"M.A.C.C.":["Mike McCready","Matt Cameron","Jeff Ament"],"Audioslave":["Tom Morello","Brad Wilk","Tim Commerford"],"Soundgarden":["Matt Cameron","Jason Everman","Kim Thayil","Hiro Yamamoto","Ben Shepherd"],"Temple of the Dog":["Stone Gossard","Eddie Vedder","Mike McCready","Matt Cameron","Jeff Ament"]}}
