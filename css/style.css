@@ -21,17 +21,13 @@ input, select {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   padding: 3px;
+  max-width: 140px;
 }
 
 input {
   border: none;
   box-shadow: inset 0 0 5px #000;
   border-radius: 0.2em;
-  max-width: 140px;
-}
-
-select {
-  max-width: 200px;
 }
 
 a, a:hover, a:link, a:visited {

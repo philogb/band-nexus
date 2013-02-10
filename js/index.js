@@ -137,7 +137,7 @@ function buildGraph() {
         onCreateLabel: function(domElement, node){
           domElement.innerHTML = node.name;
           domElement.onclick = function(){
-            if (node._depth != 1) {
+            if (!$(domElement).hasClass('depth0')) {
               return;
             }
             loadTree(ht, node.name, function(ht, json) {
@@ -224,6 +224,12 @@ window.addEvent('domready', function(e) {
     window.location = '#' + encodeURIComponent(name);
 
     loadTree(ht, this.value, renderTree);
+  });
+
+  input.addEvent('keyup', function(e) {
+    if (e.key == 'enter') {
+      input.fireEvent('change', e);
+    }
   });
 
   new Request({
