@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Band Nexus</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='css/style.css'>
+  </head>
+  <body>
+    <header>
+      <h1>Band Nexus</h1>
+
+      <div id='log-message'>
+
+      </div>
+
+      <div class='description'>
+        Visualize connections between bands and artists. A link is shown
+        between them if the artist was part of the band at some point
+        or if some other type of collaboration happened (toured together, the
+        artist made a cover song of the band, etc). This was made by <a
+          href='http://philogb.github.com/'>Nicolas Garcia Belmonte</a>.
+      </div>
+
+      <nav>
+        Choose a band to start:
+        <ul>
+          <li>
+          <a href='#'>Metallica</a>
+          </li>
+          <li>
+            <a href='#'>Black Sabbath</a>
+            </li>
+          <li>
+            <a href='#'>Chris Vrenna</a>
+          </li>
+          <li class='other'>
+          Other:
+          <input id='input-names' type='text' placeholder='Type an artist name' list='artist-names'>
+          <datalist id='artist-names'></datalist> or select from the
+          values below
+          <select id='other-select'></select>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div id='tree'>
+    </div>
+
+    <script src='js/mootools-core-1.4.5-yc'></script>
+    <script src='js/jit.js'></script>
+    <script src='js/index.js'></script>
+  </body>
+</html>

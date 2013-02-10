@@ -1,0 +1,111 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  background: rgb(125,126,125); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgb(125,126,125) 0%, rgb(14,14,14) 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgb(125,126,125)), color-stop(100%,rgb(14,14,14))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgb(125,126,125) 0%,rgb(14,14,14) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgb(125,126,125) 0%,rgb(14,14,14) 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgb(125,126,125) 0%,rgb(14,14,14) 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  rgb(125,126,125) 0%,rgb(14,14,14) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+input, select {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  padding: 3px;
+}
+
+input {
+  border: none;
+  box-shadow: inset 0 0 5px #000;
+  border-radius: 0.2em;
+  max-width: 140px;
+}
+
+select {
+  max-width: 200px;
+}
+
+a, a:hover, a:link, a:visited {
+  color: lightblue;
+}
+
+header {
+  position: absolute;
+  z-index: 1000;
+  font-size: 0.8em;
+  top: 10px;
+  right: 10px;
+  padding: 20px;
+  background: rgba(10, 10, 10, 0.8);
+  color: #ccc;
+  border-radius: 1em;
+  width: 300px;
+}
+
+#log-message {
+  color: yellow;
+  margin-bottom: 5px;
+  transition: height 300ms;
+  -webkit-transition: height 300ms;
+  -moz-transition: height 300ms;
+  -o-transition: height 300ms;
+  -ms-transition: height 300ms;
+}
+
+.description {
+  font-weight: 200;
+}
+
+nav {
+  margin: 10px 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 3px;
+}
+
+nav li.other {
+  margin: 10px 0;
+  line-height: 2.0em;
+}
+
+#tree {
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  cursor: move;
+}
+
+.node.depth0 {
+  font-size: 0.8em;
+  color: #111;
+  background-color: #fff;
+  padding: 2px 4px;
+  border-radius: 0.4em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.node.depth2 {
+  font-size: 0.75em;
+  color: #ccc;
+  cursor: default;
+}
