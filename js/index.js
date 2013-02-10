@@ -143,6 +143,7 @@ function buildGraph() {
             }
             loadTree(ht, node.name, function(ht, json) {
               json.id = node.id;
+              window.location = '#' + encodeURIComponent(node.name);
               ht.onClick(node.id, {
                 hideLabels: true,
                 onComplete: function() {
