@@ -1,3 +1,0 @@
-Query failed: ERROR:  syntax error at or near "or"
-LINE 1: ...t rel1, lt_artist_artist rel2 where (rel1.link0=  or rel1.li...
-                                                             ^select rel1.link0 as link0, rel1.link1 as link1, rel2.name as relation from l_artist_artist rel1, lt_artist_artist rel2 where (rel1.link0=  or rel1.link1 = ) and rel1.link_type = rel2.id
