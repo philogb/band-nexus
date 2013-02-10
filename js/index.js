@@ -108,8 +108,7 @@ function renderTree(ht, json) {
 }
 
 function buildGraph() {
-  var levelDistance =  Math.min(window.innerWidth, window.innerHeight) / 5,
-      ht = new $jit.Hypertree({
+  var ht = new $jit.Hypertree({
         injectInto: 'tree',
         offset: 0.1,
 
@@ -182,6 +181,7 @@ function buildGraph() {
 
 window.addEvent('domready', function(e) {
   var body = $(document.body),
+      header = body.getElement('header'),
       links = body.getElements('nav > ul > li > a'),
       input = $('input-names'),
       select = $('other-select'),
@@ -189,6 +189,12 @@ window.addEvent('domready', function(e) {
       ht = buildGraph(),
       firstBand = decodeURIComponent(window.location.hash.slice(1)) || 'Metallica',
       list;
+
+  $('toggle').addEvent('click', function(e) {
+    e.stop();
+    header.toggleClass('hidden');
+    this.textContent = 'Click here to ' + (header.hasClass('hidden') ? 'show' : 'hide');
+  });
 
   links.addEvent('click', function(e) {
     e.stop();

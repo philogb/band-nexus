@@ -7,22 +7,16 @@
   </head>
   <body>
     <header>
-      <h1>Band Nexus</h1>
-
-      <div id='log-message'>
-
-      </div>
+    <h1>Band Nexus</h1>
 
       <div class='description'>
         Visualize connections between bands and artists. A link is shown
-        between them if the artist was part of the band at some point
-        or if some other type of collaboration happened (toured together, the
-        artist made a cover song of the band, etc). This was made by <a
-          href='http://philogb.github.com/'>Nicolas Garcia Belmonte</a>.
+        between two nodes if the artist was part of the band
+        or if some other type of collaboration took place between them.
       </div>
 
       <nav>
-        Choose a band to start:
+        Choose a band to start, for example:
         <ul>
           <li>
           <a href='#'>Metallica</a>
@@ -42,6 +36,10 @@
           </li>
         </ul>
       </nav>
+
+      <div id='log-message'></div>
+
+      <a href='#' id='toggle'>Click here to hide</a>. Made by <a href='http://twitter.com/philogb' title='Nicolas Garcia Belmonte'>@philogb</a>.
 
     </header>
 
