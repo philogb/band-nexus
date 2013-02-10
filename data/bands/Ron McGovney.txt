@@ -1,0 +1,1 @@
+{"Ron McGovney":{"Phantasm":["Gene Hoglan","John Tabares","Jim Korthy","Rodney Nicholson","Katon W. DePena"],"Metallica":["Dave Mustaine","James Hetfield","Kirk Hammett","Lars Ulrich","Robert Trujillo","Cliff Burton","Jason Newsted"]}}
