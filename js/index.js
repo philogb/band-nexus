@@ -23,14 +23,14 @@ var Log = {
         style = elem.style;
 
     style.height = '2.1em';
-    elem.innerHTML = text;
+    elem.textContent = text;
     style.visibility = 'visible';
 
     if (hide) {
       this.timer = setTimeout(function() {
         style.visibility = 'hidden';
         style.height = 0;
-        elem.innerHTML = '';
+        elem.textContent = '';
       }, 5000);
     }
   }
@@ -186,7 +186,7 @@ window.addEvent('domready', function(e) {
       select = $('other-select'),
       datalist = $('artist-names'),
       ht = buildGraph(),
-      firstBand = 'Metallica',
+      firstBand = decodeURIComponent(window.location.hash.slice(1)) || 'Metallica',
       list;
 
   links.addEvent('click', function(e) {
@@ -196,6 +196,7 @@ window.addEvent('domready', function(e) {
 
     select.selectedIndex = index;
     input.value = name;
+    window.location = '#' + encodeURIComponent(name);
 
     loadTree(ht, this.textContent, renderTree);
   });
@@ -203,6 +204,7 @@ window.addEvent('domready', function(e) {
   select.addEvent('change', function(e) {
     var name = this.value;
     input.value = name;
+    window.location = '#' + encodeURIComponent(name);
 
     loadTree(ht, this.value, renderTree);
   });
@@ -212,6 +214,7 @@ window.addEvent('domready', function(e) {
         index = list.indexOf(name);
 
     select.selectedIndex = index;
+    window.location = '#' + encodeURIComponent(name);
 
     loadTree(ht, this.value, renderTree);
   });
